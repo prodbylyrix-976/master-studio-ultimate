@@ -22,6 +22,7 @@ juce_add_plugin(MasterStudioUltimate
     EDITOR_WANTS_KEYBOARD_FOCUS TRUE
     COPY_PLUGIN_AFTER_BUILD FALSE)
 
+juce_generate_juce_header(MasterStudioUltimate)
 target_sources(MasterStudioUltimate PRIVATE
     Source/PluginProcessor.cpp
     Source/PluginProcessor.h
